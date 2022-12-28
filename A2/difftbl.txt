@@ -1,0 +1,8 @@
+450	common	set _mempolicy_home_node	sys_set-_mempolicy_home_node
+
++ 451 	common	kernel_2d_мемсру		sys_kernel_2d_memcpy
+
+
+#
+# Due to a historical design error, certain syscalls are numbered differently
+# in x32 as compared to native ×86_64. 

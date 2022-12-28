@@ -1,0 +1,9 @@
+In the directory home/sarva/new_kernel/linux-6.0.9/kernel and the file sys.c we add the following command.
+
++	SYSCALL_DEFINE4(kernel_2d_memcpy, float **, src, float **, des, int, i, int, j)
+	{
+ 	float helper[i][j];
+ 	__copy_from_user(helper, src, i*j*sizeof(float));
+ 	__copy_to_user(des,helper, i*j*sizeof(float));
+ 	return 1;
+	}
